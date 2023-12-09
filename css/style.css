@@ -485,6 +485,12 @@ section {
     margin-bottom: 0.5rem;
 }
 
+.experience-description-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 25px;
+}
+
 .experience-job-title {
     color: var(--primary-colour);
 }
@@ -530,6 +536,10 @@ section {
     padding-left: 2rem;
     padding-right: 2rem;
     padding-bottom: 2rem;
+}
+
+.experience-job-description {
+    font-size: 1.4rem;
 }
 
 .experience .box-container .box:before {
