@@ -262,9 +262,11 @@ section {
 
 .about .row-1 {
     display: flex;
+    flex-direction: row;
+    align-items: flex-start;
     flex-wrap: wrap;
-    gap: 1.5rem;
     padding-bottom: 2rem;
+    column-gap: 80px;
 }
 
 .about .row-1 .image{
@@ -290,6 +292,7 @@ section {
 .about .row-1 .content p {
     color: var(--fifth-colour);
     font-size: 1.7rem;
+    text-align: left;
     padding: .5rem 0;
 }
 
@@ -306,6 +309,38 @@ section {
 
 .about .row-1 .content .box-container .box span {
     color: var(--primary-colour);
+}
+
+.my-interests-title {
+    font-size: 2rem;
+    color: var(--primary-colour);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.my-interests-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.my-interest-description {
+    color: var(--fifth-colour);
+    font-size: 1.7rem;
+}
+
+.my-interest-container {
+    flex: 1 1 5rem;
+}
+
+.my-interest-details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .my-skills .skills-sections {
@@ -830,6 +865,21 @@ section {
     .contact .row .map {
         margin: 0 auto;
     }
+
+    .my-interest-container {
+        margin-top: 30px;
+    }
+
+    .my-interest-image{
+        width: 50%;
+        object-fit: contain;
+    }
+
+    .my-interest-description {
+        width: 50%;
+        text-align: start;
+    }
+
 }
 
 @media (max-width: 450px) {
