@@ -1,0 +1,61 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: #33BBC5;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1000;
+    flex-flow: column;
+    padding: 6rem 2rem;
+    width: 30rem;
+    text-align: center;
+}
+
+header .logo {
+    color: var(--white-colour);
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+header .logo span {
+    color: var(--primary-colour);
+}
+
+header .navbar a {
+    display: block;
+    font-size: 2rem;
+    color: var(--white-colour);
+    margin: 2rem 0;
+}
+
+header .navbar a:hover {
+    letter-spacing: .1rem;
+    color: var(--primary-colour);
+}
+
+header .follow a {
+    font-size: 2.5rem;
+    color: var(--white-colour);
+    margin: 0 .7rem;
+}
+
+header .follow a:hover {
+    color: var(--primary-colour);
+}
+
+#menu-bars {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 10000;
+    background-color: var(--fifth-colour);
+    color: var(--white-colour);
+    border-radius: .5rem;
+    padding: 1rem 1.5rem;
+    font-size: 3rem;
+    cursor: pointer;
+    display: none;
+}

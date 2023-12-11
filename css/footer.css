@@ -1,0 +1,12 @@
+.footer {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    text-align: center;
+    color: var(--fifth-colour);
+    background: var(--white-colour);
+}
+
+.footer h1 {
+    color: var(--primary-colour);
+    font-size: 1.5rem;
+}

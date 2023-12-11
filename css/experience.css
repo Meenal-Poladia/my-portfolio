@@ -1,0 +1,131 @@
+.experience-details {
+    font-size: 1em;
+    line-height: 1.75em;
+    border-top: 3px solid;
+    -o-border-image: linear-gradient(to right, #743ad5 0%, #d53a9d 100%);
+    border-image: linear-gradient(to right, #743ad5 0%, #d53a9d 100%);
+    border-image-slice: 1;
+    border-width: 3px;
+    margin: 0;
+    padding: 1.5rem 4rem;
+    counter-increment: section;
+    position: relative;
+    color: #34435E;
+}
+
+.experience-details:before {
+    content: counter(section);
+    position: absolute;
+    border-radius: 50%;
+    padding: 10px;
+    height: 1.25em;
+    width: 1.25em;
+    background-color: #34435E;
+    text-align: center;
+    line-height: 1.25em;
+    color: #ffffff;
+    font-size: 1em;
+}
+
+.icon-and-job-details {
+    display: flex;
+    font-size: 1.7rem;
+    align-items: flex-end;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.experience-description-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 25px;
+}
+
+.experience-job-title {
+    color: var(--primary-colour);
+}
+
+.experience-details:nth-child(odd) {
+    border-right: 3px solid;
+}
+
+.experience-details:nth-child(odd):before {
+    left: 100%;
+    margin-left: -20px;
+}
+
+.experience-details:nth-child(even) {
+    border-left: 3px solid;
+}
+
+.experience-details:nth-child(even):before {
+    right: 100%;
+    margin-right: -20px;
+}
+
+.experience-details:first-child {
+    border-top: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.experience-details:last-child {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.experience .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.experience .box-container .box {
+    position: relative;
+    flex: 1 1 33rem;
+    border-left: .2rem solid var(--primary-colour);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+}
+
+.experience-job-description {
+    font-size: 1.4rem;
+}
+
+.experience .box-container .box:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -1rem;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background: var(--primary-colour);
+}
+
+.experience .box-container .box .content {
+    background: #ffffff;
+    padding: 1.5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+}
+
+.experience .box-container .box .content span {
+    color: var(--white-colour);
+    font-size: 1.7rem;
+    background: var(--primary-colour);
+    border-radius: 50rem;
+    padding: .4rem 1rem;
+}
+
+.experience .box-container .box .content h3 {
+    font-size: 2.5rem;
+    padding: 3rem 0;
+    color: var(--white-colour);
+}
+
+.experience .box-container .box .content p {
+    font-size: 1.5rem;
+    color: var(--fifth-colour);
+}
