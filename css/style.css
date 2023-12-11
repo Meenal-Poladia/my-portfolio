@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
-@import "elements.css";
 @import "sidebar.css";
 @import "home.css";
 @import "cursor.css";
@@ -125,6 +124,10 @@ section {
         text-align: start;
     }
 
+    .portfolio .box-container  .box .icons .open-project {
+        display: none;
+    }
+
 }
 
 @media (max-width: 450px) {
@@ -145,5 +148,9 @@ section {
     .my-skills .skills-sections {
         justify-content: center;
         gap: 3.5rem;
+    }
+
+    .portfolio .box-container  .box .icons .open-project {
+        display: none;
     }
 }

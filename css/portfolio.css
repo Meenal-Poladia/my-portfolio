@@ -56,6 +56,10 @@
     margin-bottom: 1rem;
 }
 
+.portfolio .box-container  .box .icons .open-project {
+    display: block;
+}
+
 .portfolio .box-container .box .icons a:hover {
     background: var(--primary-colour);
     color: var(--white-colour);
